@@ -17,46 +17,46 @@ input, textarea
 		border-color: green
 
 body
-	font-size: 16px
+	font-size: 12px
 	min-width: 320px
 	position: relative
 	line-height: 1.65
-	font-family: 'Roboto', sans-serif
+	font-family: 'Gothampro', sans-serif
 	overflow-x: hidden
 	color: $text
 
 // Custom Sass / Remove before use
 
-.container
-	max-width: 700px
-	padding:
-		right: $gutter/2
-		left: $gutter/2
-	margin:
-		left: auto
-		right: auto
+.logo-nav
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: row
 
-.img-responsive
-	display: block
-	max-width: 100%
-	height: auto
+svg
+	vertical-align: top
+.wrapper
+	max-width: 940px
+	margin: 0 auto
 
-.example-grid
-	display: grid
-	grid-gap: $gutter
-	grid-template-columns: 1fr 1fr
-	grid-template-areas: "left right"
-	> div:first-child
-		grid-area: left
-	> div:last-child
-		grid-area: right
-	+media-breakpoint-down(xs)
-		display: block
-		> div
-			padding: $gutter/2 0
-	
-.example-img
-	width: 100%
-
-.parent // Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/
-	background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)
+.logo
+	div
+		display: inline-block
+		margin-top: 2px
+		padding: 0 14px
+		p
+			font-weight: 300
+			font-size: 11px
+			color: $text-lite
+			line-height: 22px
+			&:first-child
+				font-size: 20px
+				text-transform: uppercase
+				font-weight: 700
+				line-height: 22px
+				font-family: 'Gothampro', sans-serif
+				color: $text
+				line-height: 22px
+				margin-bottom: 0
