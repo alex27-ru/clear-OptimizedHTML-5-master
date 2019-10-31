@@ -29,6 +29,7 @@ body
 a
 	text-decoration: none
 	transition: $tran
+	color: $text
 	&:hover, &:active
 		outline: none
 		text-decoration: none
@@ -43,6 +44,7 @@ a
 	display: flex
 	flex-direction: row
 	justify-content: space-between
+	margin-bottom: 30px
 
 svg
 	vertical-align: top
@@ -118,3 +120,41 @@ svg
 		font-size: 11px
 		color: $text-lite
 
+nav
+	background-color: $accent
+	line-height: 22px
+	font-weight: 500
+	font-size: 14px
+
+.nav
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	list-style: none
+	justify-content: center
+	padding: 0
+	.nav-item
+		width: 150px
+		height: 60px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		align-items: stretch
+		align-content: center
+.nav-link
+	flex-grow: 1
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
+	align-items: center
+	background-color: $accent
+	&:hover
+		background-color: darken($accent, 2%)
