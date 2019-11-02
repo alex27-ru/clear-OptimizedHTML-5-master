@@ -21,12 +21,18 @@ body
 	min-width: 320px
 	position: relative
 	line-height: 1.65
-	font-family: 'Roboto', sans-serif
+	font-family: 'Lato', sans-serif
 	overflow-x: hidden
 	color: $text
+	font-weight: 400
 
 // Custom Sass / Remove before use
-
+a
+	text-decoration: none
+	color: $text
+	&:hover, &:active
+		text-decoration: none
+		color: $text
 .wrapper
 	max-width: 940px
 	margin: 0 auto
@@ -49,3 +55,14 @@ header
 		text-align: right
 		p
 			margin: 0
+		.phone
+			//color: #fff
+			font-size: 28px
+			font-weight: 700
+	.call-back
+		color: $accent
+		text-decoration: underline
+
+.logo
+	color: #5a5a5a
+	font-size: 30px
