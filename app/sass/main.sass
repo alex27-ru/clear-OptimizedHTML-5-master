@@ -21,14 +21,32 @@ body
 	min-width: 320px
 	position: relative
 	line-height: 1.65
-	font-family: 'Roboto', sans-serif
+	font-family: 'ProximaNova-Semibold', sans-serif
 	overflow-x: hidden
 	color: $text
 
 // Custom Sass / Remove before use
+*
+	&:focus
+		outline-color: #ff5b97
+button
+	padding: 0
+	border: none
+	font: inherit
+	color: inherit
+	background-color: transparent
+	cursor: pointer
+a
+	text-decoration: none
+	color: inherit
+	transition: all .3s ease
+	&:hover, &:active
+		text-decoration: none
+		color: $accent
 
-.container
-	max-width: 700px
+.wrapper
+	max-width: 1600px
+	padding-top: 50px
 	padding:
 		right: $gutter/2
 		left: $gutter/2
@@ -41,22 +59,67 @@ body
 	max-width: 100%
 	height: auto
 
-.example-grid
-	display: grid
-	grid-gap: $gutter
-	grid-template-columns: 1fr 1fr
-	grid-template-areas: "left right"
-	> div:first-child
-		grid-area: left
-	> div:last-child
-		grid-area: right
-	+media-breakpoint-down(xs)
-		display: block
-		> div
-			padding: $gutter/2 0
-	
-.example-img
-	width: 100%
+.logo-img
+	width: 43px
+	height: 34px
+	background-image: url(../img/_src/logo.svg)
 
-.parent // Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/
-	background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)
+header
+	max-width: 1200px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	margin-left: auto
+	margin-right: auto
+
+.logo
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	.logo-img
+		margin-right: 18px
+	.logo-text
+		font-size: 24px
+		span
+			color: #ff4d87
+
+nav
+	margin-right: 100px
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+	justify-content: space-between
+	width: 700px
+.header-nav
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-between
+	padding: 0
+	text-transform: uppercase
+	margin: 0
+	align-items: center
+	width: 90%
+	.active
+		color: $accent
+	li
+		list-style: none
+
+.button
+	width: 15px
+	height: 13px
+	background-image: url(../img/_src/burger.svg)
+	margin-bottom: 4px
+	&:focus
+		outline-color: #ff5b97
