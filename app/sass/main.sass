@@ -17,21 +17,30 @@ input, textarea
 		border-color: green
 
 body
-	font-size: 16px
+	font-size: 14px
 	min-width: 320px
 	position: relative
 	line-height: 1.65
-	font-family: 'Roboto', sans-serif
+	font-family: 'ProximaNova', sans-serif
 	overflow-x: hidden
 	color: $text
+	font-weight: 400
 
 // Custom Sass / Remove before use
-
+@mixin button-reset
+	padding: 0
+	border: none
+	font: inherit
+	color: inherit
+	background-color: transparent
+	cursor: pointer
+ul
+	margin: 0
+	padding: 0
+li
+	list-style: none
 .container
-	max-width: 700px
-	padding:
-		right: $gutter/2
-		left: $gutter/2
+	max-width: 940px
 	margin:
 		left: auto
 		right: auto
@@ -40,23 +49,75 @@ body
 	display: block
 	max-width: 100%
 	height: auto
+.header__top
+	border-bottom: 1px dashed #f4f4f4
+	height: 50px
+	.container
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		align-items: center
+		height: 100%
 
-.example-grid
-	display: grid
-	grid-gap: $gutter
-	grid-template-columns: 1fr 1fr
-	grid-template-areas: "left right"
-	> div:first-child
-		grid-area: left
-	> div:last-child
-		grid-area: right
-	+media-breakpoint-down(xs)
-		display: block
-		> div
-			padding: $gutter/2 0
-	
-.example-img
-	width: 100%
+.header__top-phone
+	font-weight: 700
+.call-back
+	@include button-reset
+	border-radius: 5px
+	background-image: linear-gradient(to top, #c11717, #e42626)
+	color: #fff
+	padding: 7px 25px
+	align-self: center
+	font-weight: 700
 
-.parent // Lazy Load Placeholder Generator: https://webdesign-master.ru/services/lazy/
-	background-image: url(data:image/gif;base64,R0lGODlhCgAIAIABAN3d3f///yH5BAEAAAEALAAAAAAKAAgAAAINjAOnyJv2oJOrVXrzKQA7)
+.header-nav_list
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: space-evenly
+	font-weight: 300
+.header-nav_item
+	padding: 0 15px
+
+.header__bottom
+	.container
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		align-items: center
+		p
+			padding: 0
+			margin: 0
+		.header-phone
+			margin-right: 30px
+.header-description
+	font-weight: 300
+.header-phone
+	font-weight: 700
+	font-size: 18px
+.link-os
+	margin-left: 10px
+	img
+		width: 40px
+		height: 40px
+		border-radius: 5px
+		border: solid 1px $btn-color
+		padding: 7px 10px 9px
+.header__bottom_right
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+
+.header__bottom_padding
+	padding: 20px 0
