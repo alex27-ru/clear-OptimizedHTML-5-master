@@ -34,6 +34,8 @@ body
 	margin:
 		left: auto
 		right: auto
+header
+	background-color: #000
 
 .img-responsive
 	display: block
@@ -52,7 +54,7 @@ body
 .logo__name
 	font-size: 28px
 	font-weight: 800
-//	color: #fff
+
 .header
 	display: -webkit-flex
 	display: -moz-flex
@@ -60,6 +62,7 @@ body
 	display: -o-flex
 	display: flex
 	justify-content: space-between
+	color: #fff
 	p
 		margin: 0
 
@@ -72,3 +75,28 @@ body
 
 .burger
 	margin-left: 60px
+
+.header-menu
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+
+.header-menu__phone
+	&:before
+		content: ""
+		position: absolute
+		background-image: url(../img/@2x/layer-3@3x.png)
+		width: 28px
+		height: 42px
+		background-size: 105%
+		margin-left: -38px
+		margin-top: -2px
+
+
+.header-menu__text
+	font-size: 12px
+.header-menu__number
+	font-size: 21px
