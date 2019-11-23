@@ -25,6 +25,8 @@ body
 	overflow-x: hidden
 	color: $text
 	font-weight: 400
+	&.lock
+		overflow: hidden
 
 // Custom Sass / Remove before use
 @mixin button-reset
@@ -39,8 +41,16 @@ ul
 	padding: 0
 li
 	list-style: none
+header
+	position: fixed
+	width: 100%
+	top: 0
+	background-color: #fff
+	z-index: 50
 .container
-	max-width: 940px
+	position: relative
+	max-width: 960px
+	padding: 0 10px
 	margin:
 		left: auto
 		right: auto
@@ -52,6 +62,7 @@ li
 .header__top
 	border-bottom: 1px dashed #f4f4f4
 	height: 50px
+
 	.container
 		display: -webkit-flex
 		display: -moz-flex
@@ -72,7 +83,12 @@ li
 	padding: 7px 25px
 	align-self: center
 	font-weight: 700
-
+.header-nav
+	flex: 1 1 auto
+	background-color: #fff
+	z-index: 5
+	overflow: hidden
+	transition: all .3s ease
 .header-nav_list
 	display: -webkit-flex
 	display: -moz-flex
@@ -81,8 +97,11 @@ li
 	display: flex
 	justify-content: space-evenly
 	font-weight: 300
+
 .header-nav_item
-	padding: 0 15px
+	text-align: left
+	a
+		color: $text
 
 .header__bottom
 	.container
@@ -121,3 +140,78 @@ li
 
 .header__bottom_padding
 	padding: 20px 0
+
+.content__margin-top
+	margin-top: 130px
+.burger-wrap
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	align-items: center
+.burger__margin
+	margin-right: 10px
+body.lock /* блокировка скрола при открытом меню */
+.burger
+	position: relative
+	cursor: pointer
+	width: $wburger
+	height: $hburger
+	z-index: 10
+	display: none
+	span
+		height: $hline
+		left: 0
+		width: 100%
+		top: $hburger/2-$hline/2
+		background-color: $color
+		position: absolute
+		transition: all .2s ease
+	&:before, &:after
+		content: ''
+		background-color: $color
+		position: absolute
+		width: 100%
+		height: $hline
+		left: 0
+		transition: all .3s ease
+	&:before
+		top: 0px
+	&:after
+		bottom: 0px+$hline/2
+.burger.active
+  span
+    width: 0
+    left: $wburger/2
+    height: 0
+    background-color: $colActive
+  &:before
+    transform: rotate(45deg)
+    top: $hburger/2
+    background-color: $colActive
+  &:after
+    transform: rotate(-45deg)
+    top: $hburger/2
+    background-color: $colActive
+
+
+
+@media only screen and(max-width: 830px)
+	.header-nav_list
+		display: inline-block
+	.header-nav
+		width: 100%
+		position: fixed
+		text-align: center
+		top: 135px
+		height: 0
+
+		&.active
+			height: 100%
+	.header-nav_item
+		margin: 10px 0
+	.burger
+		display: block
+	.header__bottom
+		box-shadow: 1px 2px 2px -1px rgba(0, 0, 0, 0.2)
