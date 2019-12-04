@@ -41,12 +41,16 @@ a
 .wrapper
 	max-width: 1600px
 	padding-top: 50px
+	position: relative
 	padding:
 		right: $gutter
 		left: $gutter
 	margin:
 		left: auto
 		right: auto
+.wrapper_fixed
+	position: fixed
+	width: 100%
 
 .img-responsive
 	display: block
@@ -68,8 +72,7 @@ header
 	justify-content: space-between
 	margin-left: auto
 	margin-right: auto
-	position: fixed
-	width: 100%
+
 
 .logo
 	display: -webkit-flex
@@ -143,6 +146,9 @@ nav
 		top: 0px
 	&:after
 		bottom: 0px+$hline/2
+
+.content
+	
 
 
 
