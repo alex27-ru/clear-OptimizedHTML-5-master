@@ -38,10 +38,19 @@ a
 		text-decoration: none
 		color: $accent
 
+@mixin button-reset
+	padding: 0
+	border: none
+	font: inherit
+	color: inherit
+	background-color: transparent
+	cursor: pointer
+
 .wrapper
 	max-width: 1600px
 	padding-top: 50px
 	position: relative
+	z-index: 100
 	padding:
 		right: $gutter
 		left: $gutter
@@ -72,7 +81,8 @@ header
 	justify-content: space-between
 	margin-left: auto
 	margin-right: auto
-
+	z-index: 100
+	position: relative
 
 .logo
 	display: -webkit-flex
@@ -148,8 +158,64 @@ nav
 		bottom: 0px+$hline/2
 
 .content
-	
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	position: relative
+	z-index: 5
+	margin:
+		left: auto
+		right: auto
 
+
+
+.advantage-text
+	margin-left: 145px
+	max-width: 50%
+.advantage-img
+	position: relative
+	img
+		width: 100%
+.advantage-img__next
+	position: absolute
+	bottom: 60px
+	right: 200px
+.advantage-text__title
+	font-family: ProximaNova-Semibold
+	font-size: 45px
+	font-weight: 600
+	font-stretch: normal
+	font-style: normal
+	line-height: normal
+	letter-spacing: normal
+	text-align: left
+	color: #333333
+	margin-top: 243px
+	margin-bottom: 64px
+	width: 435px
+
+.advantage-text__advantage
+	margin-bottom: 54px
+	font-family: Corinthia;
+	font-size: 44px
+	color: #ff5b97
+.advantage-text__toaction
+	margin-bottom: 60px
+	font-family: Proxima-Nova-Lt
+	font-size: 16px
+	color: $text
+
+.button
+	text-transform: uppercase
+	@include button-reset
+	border: solid 1px #000000
+	padding: 20px 32px
+	font-size: 12px
+	font-family: ProximaNova-Semibold
+	letter-spacing: 0.12px
+	color: $text
 
 
 @media only screen and (max-width : 768px)
