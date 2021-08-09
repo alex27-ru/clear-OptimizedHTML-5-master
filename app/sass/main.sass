@@ -50,7 +50,7 @@ a
 	cursor: pointer
 
 .wrapper
-	max-width: 1600px
+	//max-width: 1600px
 	padding-top: 50px
 	position: relative
 	z-index: 100
@@ -169,9 +169,10 @@ nav
 	// display: flex
 	position: relative
 	z-index: 5
-	margin:
-		left: 172px
-		right: 141px
+	margin-left: auto
+	margin-right: auto
+	padding-left: 31px
+	max-width: 1600px
 
 .content-wrapper
 	position: relative
@@ -270,6 +271,7 @@ nav
 	font-family: Proxima-Nova-Lt
 	font-size: 16px
 	color: $text
+	width: 320px
 
 .button
 	text-transform: uppercase
@@ -285,15 +287,9 @@ nav
 
 
 .content2
-	max-width: 1600px
+	max-width: 1200px
 	margin: 0 auto
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flex
-	display: -o-flex
-	display: flex
-	justify-content: flex-end
-	padding: 0 0 0 20px
+	padding: 0 31px
 
 
 .img
@@ -332,7 +328,24 @@ nav
 		object-fit: contain
 		margin-bottom: 35px
 	
-
+.box
+	&__title,
+	&__text
+		text-align: center
+	&__item
+		background-color: red
+		height: 164px
+		border: solid 2px transparent
+		transition: all .3s
+	&__item:hover
+		border: solid 2px $accent
+	&__about
+		display: grid
+		grid-template:  1fr 1fr /1fr 383px 1fr
+	&__img
+		grid-area: 1/2/3/3
+		img
+			max-width: 100%
 
 
 
