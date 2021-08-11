@@ -333,22 +333,41 @@ nav
 	&__text
 		text-align: center
 	&__item
-		background-color: red
-		height: 164px
+		min-height: 164px
 		border: solid 2px transparent
 		transition: all .3s
+		padding: 27px 23px 24px
+		padding-right: 0
+		font-size: 15px
+	&__item-img
+		object-fit: contain
+		width: 39px
+		height: 35px
+		margin-bottom: 26px
+	&__item,
+	&__item-title,
+	&__item-text
+		text-align: right
+	&__item-text
+		margin: 0
+
+		
 	&__item:hover
 		border: solid 2px $accent
 	&__about
 		display: grid
-		grid-template:  1fr 1fr /1fr 383px 1fr
+		grid-template:  1fr 1fr /400px 1fr 400px
 	&__img
 		grid-area: 1/2/3/3
 		img
 			max-width: 100%
 
-
-
+.box__item
+	&:nth-child(2n+1)
+		text-align: left
+		.box__item-title,
+		.box__item-text
+			text-align: left
 
 
 
