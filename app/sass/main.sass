@@ -332,18 +332,27 @@ nav
 	&__title,
 	&__text
 		text-align: center
+	&__text
+		margin-bottom: 60px
+		font-size: 14px
+		font-style: italic
+	&__title
+		margin-bottom: 27px
+		@extend %title-font
 	&__item
 		min-height: 164px
 		border: solid 2px transparent
 		transition: all .3s
 		padding: 27px 23px 24px
-		padding-right: 0
 		font-size: 15px
 	&__item-img
 		object-fit: contain
 		width: 39px
 		height: 35px
 		margin-bottom: 26px
+	&__img
+		display: flex
+		align-items: center
 	&__item,
 	&__item-title,
 	&__item-text
@@ -365,10 +374,12 @@ nav
 .box__item
 	&:nth-child(2n+1)
 		text-align: left
+		padding-right: 0
 		.box__item-title,
 		.box__item-text
 			text-align: left
-
+	&:nth-child(2n)
+		padding-left: 0
 
 
 
