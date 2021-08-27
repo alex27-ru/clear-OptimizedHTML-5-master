@@ -233,7 +233,20 @@
               Просто оставьте нам фотографию или эскиз изделия и мы перезвоним вам и скажем примерную цену и срок изготовления.
             </p>
           </div>
-          <button class="button">Оставить заявку</button>
+          <form class="form">
+            <label for="form__name">Ваше имя</label>
+            <input id="form__name" class="form__name" type="text">
+            <label for="form__phone">Ваш телефон</label>
+            <input id="form__phone" class="form__phone" type="phone">
+            <div class="input__wrapper">
+              <input id="input__file-button" class="form__file" type="file">
+              <label class="input__file-button" for="input__file">
+                <img src="img/@2x/download.png" alt="download" class="input__file-img">
+                <span class="input__file-text">Прикрепить файл</span>
+              </label>
+            </div>
+          </form>
+          <button class="button button-form">Оставить заявку</button>
         </div>
       </div>
       <div class="advantage-img">

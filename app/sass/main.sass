@@ -178,7 +178,7 @@ nav
 	position: relative
 	max-width: 1240px
 	margin: 0 auto
-	padding: 0 20px
+	//padding: 0 20px
 
 
 .advantage-text
@@ -194,7 +194,7 @@ nav
 	flex-direction: column
 	align-items: flex-start
 	&:nth-child(2n+1)
-		padding-right: 100px
+		padding-right: 120px
 	
 .content
 	&:nth-child(2n+1)
@@ -292,7 +292,10 @@ nav
 .content2
 	max-width: 1200px
 	margin: 0 auto
-	padding: 0 31px
+	padding: 0 31px 160px
+	position: relative
+	.advantage-img__next
+		right: 0
 
 
 .img
@@ -385,8 +388,9 @@ nav
 		padding-left: 0
 
 .map
-	padding-top: 121px
+	padding-top: 185px
 	padding-bottom: 129px
+	position: relative
 	&__title
 		text-align: center
 		@extend %title-font
@@ -401,6 +405,61 @@ nav
 		margin-bottom: 56px
 	&__toaction
 		margin-bottom: 70px
+
+
+.advantage-text-last-screen__toaction
+	font-size: 18px
+	color: $text
+	padding-right: 50px
+
+.button-form
+	background-image: linear-gradient(to right, #e12462, #ff4d87)
+	color: #fff
+	border: none
+	font-weight: 600
+	margin: 0
+	width: 200px
+
+.form
+	width: 200px
+	input
+		border: none
+		border-bottom: solid 1px #ddd
+		width: 100%
+		padding: 0 9px
+		font-size: 16px
+	label
+		margin: 0 0 0 9px
+		font-family: ProximaNova
+		font-size: 12px
+		font-weight: 300
+		color: #868686
+	&__phone
+		margin-bottom: 29px
+	&__file
+		opacity: 0
+		position: absolute
+		//visibility: hidden
+.input
+	&__file-img
+		width: 17px
+		height: 15px
+		margin-right: 14px
+	&__file-text
+		font-size: 12px
+	&__wrapper
+		position: relative
+		padding-left: 9px
+		margin-bottom: 27px
+		cursor: pointer
+input.form__file
+	padding: 0
+	cursor: pointer
+.form	.input__file-button
+	width: 100%
+	margin: 0
+	
+	
 
 
 @media only screen and (max-width : 1200px)
