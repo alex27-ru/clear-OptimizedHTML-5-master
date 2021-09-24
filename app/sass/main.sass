@@ -26,7 +26,19 @@ body
 	overflow-x: hidden
 	color: $text
 	font-weight: 400
-
+button
+	border: none
+	background: none
+	padding: 0
+	margin: 0
+ul,
+li
+	list-style: none
+	margin: 0
+	padding: 0
+p
+	padding: 0
+	margin: 0
 // Custom Sass / Remove before use
 a
 	text-decoration: none
@@ -38,26 +50,19 @@ a
 	max-width: 940px
 	margin: 0 auto
 
-header
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flex
-	display: -o-flex
+.header__top
 	display: flex
 	justify-content: space-between
 	align-items: center
+	margin-bottom: 110px
 	.call
-		display: -webkit-flex
-		display: -moz-flex
-		display: -ms-flex
-		display: -o-flex
 		display: flex
 		flex-direction: column
 		text-align: right
 		p
 			margin: 0
 		.phone
-			//color: #fff
+			color: #fff
 			font-size: 28px
 			font-weight: 700
 	.call-back
@@ -68,3 +73,77 @@ header
 .logo
 	color: #5a5a5a
 	font-size: 30px
+
+.header
+	background-image: url(../img/@2x/bg-top.jpg)
+	background-position: top center
+	background-repeat: no-repeat
+	background-size: cover
+	padding-bottom: 85px
+	color: #fff
+
+.header__title
+	color: #fff
+	text-transform: uppercase
+	font-size: 48px
+	text-align: center
+	font-weight: bold
+	line-height: 46px
+	margin-bottom: 100px
+	span
+		font-size: 30px
+		font-weight: normal
+		text-transform: lowercase
+
+.header__list-items
+	display: flex
+	justify-content: space-around
+	margin-bottom: 100px
+
+.header__item
+	display: flex
+	flex-direction: column
+	max-width: 170px
+	text-align: center
+	height: 140px
+	justify-content: space-between
+	padding: 0 10px
+	align-items: center
+
+.img-box
+	width: 64px
+	height: 64px
+	display: flex
+	justify-content: center
+	align-items: center
+
+.header__item-img
+	max-width: 64px
+
+.header__item-text 
+	font-size: 18px
+
+.header__button-inner 
+	display: flex
+	justify-content: center
+
+.button-box
+	text-align: center
+
+.button 
+	background-color: #d91233
+	border-radius: 25px
+	padding: 17px 54px 15px
+	font-size: 18px
+	line-height: 18px
+	color: #fff
+	margin: 0 20px
+	border: 2px solid #d91233
+	transition: all ease .3s
+	&:hover
+		background-color: transparent
+
+.header__button-box-text
+	margin: auto
+	margin-top: 20px
+	width: 180px
