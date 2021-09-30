@@ -140,6 +140,7 @@ a
 	margin: 0 20px
 	border: 2px solid #d91233
 	transition: all ease .3s
+	min-width: 240px
 	&:hover
 		background-color: transparent
 
@@ -177,17 +178,45 @@ a
 	&__title,
 	&__title-description
 		text-align: center
+	&__title-description
+		margin-bottom: 60px
+	&__title
+		font-size: 30px
+		font-weight: bold
+		margin-bottom: 15px
 	&__form
 		display: flex
-		justify-content: space-around
+		justify-content: space-evenly
+		font-size: 13px
+		border: 5px solid #fff
+		padding: 34px 0px
+		input
+			width: 100%
+			border: none
+			padding: 9px 17px 10px
 	&__form-box
 		width: 240px
 	&__btn
 		margin: 0
+		margin-top: 28px
+		&:hover
+			color: #000
+	&__textarea
+		border: none
+		padding: 14px 17px
+		resize: none
+		height: 120px
+		width: 100%
+		font-size: 13px
+		margin-bottom: -7px
+	&__form-titles
+		margin-bottom: 1px
+		margin-top: 20px
+		line-height: 19px
 .select-wrapper
 	position: relative
 	width: 100%
-	margin: 20px 0
+	margin: 0px 0 20px
 	background-color: #fff
 
 .select-arrow
@@ -195,7 +224,7 @@ a
 	border: 5px solid transparent
 	border-bottom: 0
 	right: 15px
-	top: 22px
+	top: 17px
 	border-top-color: #b8b8b8
 	&:before
 		content: ''
@@ -208,13 +237,13 @@ a
 
 
 .select
-	&__brand
+	&__options
 		background: transparent
 		border: 0
 		border-radius: 0
 		appearance: none
 		position: relative
-		padding: 14px 17px
+		padding: 9px 17px 10px
 		padding-right: 55px
 		font-size: 13px
 		color: #b8b8b8
