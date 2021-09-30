@@ -171,29 +171,31 @@ a
 		font-weight: bold
 
 
-
+.form
+	display: flex
+	justify-content: space-evenly
+	font-size: 13px
+	border: 5px solid #fff
+	padding: 34px 0px
+	input
+		width: 100%
+		border: none
+		padding: 9px 17px 10px
+.title
+	text-align: center
+	font-size: 30px
+	font-weight: bold
+	line-height: 1
+	margin-bottom: 60px
 .feedback
 	padding: 80px 0
 	background-color: #ebebeb
-	&__title,
 	&__title-description
 		text-align: center
-	&__title-description
 		margin-bottom: 60px
 	&__title
-		font-size: 30px
-		font-weight: bold
 		margin-bottom: 15px
-	&__form
-		display: flex
-		justify-content: space-evenly
-		font-size: 13px
-		border: 5px solid #fff
-		padding: 34px 0px
-		input
-			width: 100%
-			border: none
-			padding: 9px 17px 10px
+
 	&__form-box
 		width: 240px
 	&__btn
@@ -250,6 +252,34 @@ a
 		width: 100%
 
 .assortment 
+	padding: 80px 0
+	&__inner-list
+		display: flex
+		justify-content: center
+		flex-wrap: wrap
+			
+	&__item
+		width: 140px
+		height: 80px
+		margin: 0 10px 20px
+		&:nth-child(6),
+		&:nth-child(10)
+			margin-left: 15%
+		&:nth-child(9),
+		&:nth-child(13)
+			margin-right: 15%
+			
+
+	&__item-img
+		object-fit: contain
+		max-width: 100%
+		opacity: .7
+
+
+
+
+
+
 
 .video 
 
