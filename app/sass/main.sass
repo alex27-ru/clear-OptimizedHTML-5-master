@@ -47,8 +47,9 @@ a
 		text-decoration: none
 		color: $text
 .wrapper
-	max-width: 940px
+	max-width: 970px
 	margin: 0 auto
+	padding: 0 15px
 
 .header__top
 	display: flex
@@ -293,7 +294,40 @@ a
 		width: 100%
 		height: 100%
 		background-color: #3b3b3b
-.reviews 
+.reviews
+	background-color: #ebebeb
+	padding: 80px 0
+	&__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&__item
+		display: flex
+		margin-bottom: 50px
+	&__item-box
+		display: flex
+		flex-direction: column
+		max-width: 330px
+	&__img
+		border-radius: 50%
+		max-width: 90px
+		max-height: 90px
+		margin-right: 20px
+	&__user-name
+		font-size: 12px
+		font-weight: bold
+		color: #757575
+		margin-bottom: 10px
+	&__item-title
+		font-size: 16px
+		font-weight: bold
+		color: #d91233
+		margin-bottom: 10px
+	&__text
+		font-size: 13px
+		font-weight: bold
+		color: #2b2b2b
+		line-height: 1.2
 
 .consultation 
 
