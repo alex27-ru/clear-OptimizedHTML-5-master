@@ -51,7 +51,8 @@ a
 	margin: 0 auto
 	padding: 0 15px
 
-.header__top
+.header__top,
+.footer__inner
 	display: flex
 	justify-content: space-between
 	align-items: center
@@ -68,7 +69,6 @@ a
 			font-weight: 700
 	.call-back
 		color: $accent-red
-		//color: $accent-blue
 		text-decoration: underline
 
 .logo
@@ -366,6 +366,46 @@ a
 	width: 290px
 	margin: 0 20px
 
-.map 
+.map
+	padding: 50px 0 210px
+	background-image: url(../img/@2x/map.jpg)
+	background-position: top center
+	background-repeat: no-repeat
+	background-size: cover
+	&__contacts
+		max-width: 480px
+		padding: 60px 10px 40px
+		background-color: #d91233
+		color: #fff
+		margin: auto
+		align-items: center
+		display: flex
+		flex-direction: column
+	&__contacts-title
+		font-size: 24px
+		font-weight: bold
+		line-height: 1
+		margin-bottom: 40px
+	&__contacts-adress,
+	&__contacts-phone,
+	&__contacts-mail
+		font-size: 20px
+		line-height: 1
+		margin-bottom: 30px
+		color: #fff
+	&__contacts-phone
+		font-weight: bold
+	&__contacts-phone,
+	&__contacts-mail
+		transition: all .3s ease
+		&:hover
+			color: #fff
+			opacity: .8
 
-.footer 
+.footer
+	&__inner
+		margin: 0
+		padding: 30px 0
+	.footer__inner
+		.phone
+			color: #000
