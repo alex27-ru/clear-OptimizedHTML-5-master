@@ -21,7 +21,7 @@
           <div class="logo">ЛОГОТИП</div>
           <div class="call">
             <a href="tel:8 800 232 32 12" class="phone">8 800 232 32 12</a>
-            <a href="#" class="call-back">Заказать обратный звонок</a>
+            <button class="call__btn">Заказать обратный звонок</button>
           </div>
         </header>
 
@@ -463,6 +463,36 @@
         </div>
       </div>
     </footer>
+    <div class="modal">
+      <div class="thanks">
+        <span class="modal__close"></span>
+        <h3 class="thanks__title">Спасибо за вашу заявку!</h3>
+        <p class="thanks__text">Мы связжемся с Вами в ближайшее время!</p>
+      </div>
+
+      <div class="call-back">
+        <span class="modal__close"></span>
+        <h3 class="call__title">Заказ обратного звонка</h3>
+        <p class="call__text">Оставьте заявку и мы Вам перезвоним!</p>
+
+        <input class="modal__input" placeholder="Ваше имя" name="name" type="text" />
+
+        <input class="modal__input" placeholder="Ваш телефон" name="phone" type="phone" />
+
+        <input class="modal__input" placeholder="Ваша почта" name="mail" type="e-mail" />
+
+        <button class="button modal_btn">Отправить заявку</button>
+      </div>
+      <div class="fast-request">
+        <span class="modal__close"></span>
+        <h3 class="fast-request__title">Быстрая заявка</h3>
+        <p class="fast-request__text">Оставьте заявку и мы Вам перезвоним!</p>
+        <input class="modal__input" placeholder="Ваше имя" name="name" type="text" />
+
+        <input class="modal__input" placeholder="Ваш телефон" name="phone" type="phone" />
+        <button class="button modal_btn">Отправить заявку</button>
+      </div>
+    </div>
 
     <script src="js/scripts.min.js"></script>
   </body>

@@ -1,5 +1,11 @@
-document.addEventListener("DOMContentLoaded", function() {
+$(function () {
 
-	// Custom JS
+$('.call__btn').on(click, function () {
+	$('.call-back').addClass('modal-active');
+
+});
+
+
+
 
 });
