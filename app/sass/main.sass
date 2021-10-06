@@ -428,11 +428,14 @@ a
 	z-index: 20
 	width: 100%
 	top: 0
+	right: 0
 	height: 100vh
-	display: flex
 	justify-content: center
 	align-items: center
-	display: none
+	display: flex
+	opacity: 0
+	z-index: -1
+	transition: all ease .3s
 	&_btn
 		font-size: 16px
 		padding: 15px 0
@@ -487,12 +490,18 @@ a
 	position: relative
 	padding: 33px 45px
 	opacity: 0
-	display: none
-	transition: all ease .2s
+	transition: all ease 1s
 	text-align: center
+	display: none
+	//z-index: -1
 .modal-active
-	display: block
 	opacity: 1
+	z-index: 50
+	display: block
+.modal-active-flex
+	opacity: 1
+	z-index: 50
+
 
 	&__title,
 	.call__title,
