@@ -57,13 +57,14 @@
 
         <div class="header__button-inner">
           <div class="button-box">
-            <button class="button" data-click="fast-request">Быстрая заявка</button>
+            <button class="button fast-btn" data-click="fast-request">Быстрая заявка</button>
             <p class="header__button-box-text">
               Мы перезвоним Вам для уточнения деталей.
             </p>
           </div>
           <div class="button-box">
-            <button class="button">Подробная заявка</button>
+            
+            <a href="#feedback" class="button">Подробная заявка</a>
             <p class="header__button-box-text">
               Заполните подробную заявку онлайн!
             </p>
@@ -138,7 +139,7 @@
       </div>
     </section>
 
-    <section class="feedback">
+    <section class="feedback" id="feedback">
       <div class="wrapper">
         <h2 class="title feedback__title">Подробная заявка</h2>
         <p class="feedback__title-description">
@@ -463,36 +464,38 @@
         </div>
       </div>
     </footer>
-    <div class="modal">
-      <div class="thanks">
-        <span class="modal__close"></span>
+
+    <div class="call-back mfp-hide" id="call-back">
+      <span class="modal__close mfp-close"></span>
+      <h3 class="call__title">Заказ обратного звонка</h3>
+      <p class="call__text">Оставьте заявку и мы Вам перезвоним!</p>
+
+      <input class="modal__input" placeholder="Ваше имя" name="name" type="text" />
+
+      <input class="modal__input" placeholder="Ваш телефон" name="phone" type="phone" />
+
+      <input class="modal__input" placeholder="Ваша почта" name="mail" type="e-mail" />
+
+      <button class="button modal_btn">Отправить заявку</button>
+    </div>
+
+    <div class="fast-request mfp-hide" id="fast-request">
+      <span class="modal__close  mfp-close"></span>
+      <h3 class="fast-request__title">Быстрая заявка</h3>
+      <p class="fast-request__text">Оставьте заявку и мы Вам перезвоним!</p>
+      <input class="modal__input" placeholder="Ваше имя" name="name" type="text" />
+
+      <input class="modal__input" placeholder="Ваш телефон" name="phone" type="phone" />
+      <button class="button modal_btn">Отправить заявку</button>
+    </div>
+
+      <div class="thanks mfp-hide" id="thanks">
+        <span class="modal__close  mfp-close"></span>
         <h3 class="thanks__title">Спасибо за вашу заявку!</h3>
         <p class="thanks__text">Мы связжемся с Вами в ближайшее время!</p>
       </div>
 
-      <div class="call-back">
-        <span class="modal__close"></span>
-        <h3 class="call__title">Заказ обратного звонка</h3>
-        <p class="call__text">Оставьте заявку и мы Вам перезвоним!</p>
 
-        <input class="modal__input" placeholder="Ваше имя" name="name" type="text" />
-
-        <input class="modal__input" placeholder="Ваш телефон" name="phone" type="phone" />
-
-        <input class="modal__input" placeholder="Ваша почта" name="mail" type="e-mail" />
-
-        <button class="button modal_btn">Отправить заявку</button>
-      </div>
-      <div class="fast-request">
-        <span class="modal__close"></span>
-        <h3 class="fast-request__title">Быстрая заявка</h3>
-        <p class="fast-request__text">Оставьте заявку и мы Вам перезвоним!</p>
-        <input class="modal__input" placeholder="Ваше имя" name="name" type="text" />
-
-        <input class="modal__input" placeholder="Ваш телефон" name="phone" type="phone" />
-        <button class="button modal_btn">Отправить заявку</button>
-      </div>
-    </div>
 
     <script src="js/scripts.min.js"></script>
   </body>

@@ -45,7 +45,9 @@ gulp.task('styles', function() {
 gulp.task('scripts', function() {
 	return gulp.src([
 		'node_modules/jquery/dist/jquery.min.js', // Optional jQuery plug-in (npm i --save-dev jquery)
-		'app/js/_libs.js', // JS libraries (all in one)
+		'app/libs/magnific-popup/dist/jquery.magnific-popup.min.js', // magnific-popup
+		'app/libs/jquery-smooth-scroll/jquery.smooth-scroll.min.js', // smooth-scroll
+		'app/js/_libs.js', // JS libraries (all in one) 
 		'app/js/_custom.js', // Custom scripts. Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
