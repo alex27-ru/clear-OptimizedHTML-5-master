@@ -40,9 +40,46 @@ $('.fast-btn').magnificPopup({
   }
 });
 
-$('a').smoothScroll();
+//тестовый код благодарности за заявку
+$('.send-btn').magnificPopup({
+    removalDelay: 300,
+    mainClass: 'mfp-fade',
+  items: {
+      src: '#thanks',
+      type: 'inline'
+  }
+});
 
+$('a').smoothScroll(); // smoothScroll на все ссылки
 
+// script mail
+//E-mail Ajax Send
+	// $("form").submit(function() { //Change
+	// 	var th = $(this);
+	// 	$.ajax({
+	// 		type: "POST",
+	// 		url: "mail.php", //Change
+	// 		data: th.serialize()
+	// 	}).done(function() {
+	// 		alert("Thank you!");
+
+//код благодарности за заявку вместо тестового
+//   $('.send-btn').magnificPopup({
+//     removalDelay: 300,
+//     mainClass: 'mfp-fade',
+//   items: {
+//       src: '#thanks',
+//       type: 'inline'
+//   }
+// });
+
+	// 		setTimeout(function() {
+	// 			// Done Functions
+	// 			th.trigger("reset");
+	// 		}, 1000);
+	// 	});
+	// 	return false;
+	// });
 
 
 
