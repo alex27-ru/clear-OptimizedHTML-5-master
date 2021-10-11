@@ -15,7 +15,10 @@ input, textarea
 		border-color: red
 	&:required:valid
 		border-color: green
-
+ul,
+li
+	margin: 0
+	padding: 0
 body
 	font-size: 12px
 	min-width: 320px
@@ -36,34 +39,28 @@ a
 		color: lighten($text, 20%)
 		border-color: lighten($text, 20%)
 
-.logo-nav
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flex
-	display: -o-flex
-	display: flex
-	flex-direction: row
-	justify-content: space-between
-	margin-bottom: 30px
 
 svg
 	vertical-align: top
 .wrapper
 	max-width: 940px
 	margin: 0 auto
-
+.header
+	margin-bottom: -30px
+	z-index: 2
+	position: relative
 .logo
-	.logo-link
-		display: -webkit-flex
-		display: -moz-flex
-		display: -ms-flex
-		display: -o-flex
+	&__img
+		fill: $text
+	&__nav
 		display: flex
-	.logo-text
-		display: -webkit-flex
-		display: -moz-flex
-		display: -ms-flex
-		display: -o-flex
+		flex-direction: row
+		justify-content: space-between
+		padding: 30px 0
+
+	&__link
+		display: flex
+	&__text
 		display: flex
 		flex-direction: column
 		justify-content: space-between
@@ -92,22 +89,14 @@ svg
 	font-weight: 500
 	margin-left: 30px
 .call-header
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flex
-	display: -o-flex
 	display: flex
 	align-items: flex-start
 	.phone-heder
 		text-align: right
-		display: -webkit-flex
-		display: -moz-flex
-		display: -ms-flex
-		display: -o-flex
 		display: flex
 		flex-direction: column
 		justify-content: space-around
-	p
+	a
 		&:first-child
 			font-size: 18px
 			font-weight: 700
@@ -120,41 +109,70 @@ svg
 		font-size: 11px
 		color: $text-lite
 
-nav
+.nav
 	background-color: $accent
 	line-height: 22px
 	font-weight: 500
 	font-size: 14px
 
 .nav
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flex
-	display: -o-flex
-	display: flex
-	list-style: none
-	justify-content: center
-	padding: 0
-	.nav-item
+	&__list
+		display: flex
+		list-style: none
+		justify-content: center
+		padding: 0
+	&__item
 		width: 150px
 		height: 60px
-		display: -webkit-flex
-		display: -moz-flex
-		display: -ms-flex
-		display: -o-flex
 		display: flex
 		justify-content: center
 		align-items: stretch
 		align-content: center
-.nav-link
-	flex-grow: 1
-	display: -webkit-flex
-	display: -moz-flex
-	display: -ms-flex
-	display: -o-flex
-	display: flex
-	justify-content: center
-	align-items: center
-	background-color: $accent
-	&:hover
-		background-color: darken($accent, 2%)
+	&__link
+		flex-grow: 1
+		display: flex
+		justify-content: center
+		align-items: center
+		//background-color: $accent
+		&:hover
+			background-color: darken($accent, 2%)
+
+.first-screen
+	padding: 170px 0 140px
+	background-image: url(../img/@2x/first-bg.jpg)
+	background-position: top center
+	background-repeat: no-repeat
+	background-size: cover
+	z-index: 1
+	position: relative
+	&__title-description
+		color: #fff
+		max-width: 240px
+		font-weight: 300
+		font-size: 14px
+	&__link-inner
+		display: flex
+		align-items: center
+	&__link-btn
+		color: #0d0d0d
+		font-size: 12px
+		font-weight: 500
+		width: 200px
+		height: 50px
+		background-color: $accent
+		padding: 15px 0
+		text-align: center
+		margin-right: 30px
+	&__link
+		color: #fff
+		font-size: 12px
+		font-weight: 500
+.title
+	font-family: 'Gothampro'
+	font-weight: bold
+	text-transform: uppercase
+	font-size: 20px
+	color: $text
+	&--first-screen
+		font-size: 36px
+		color: #fff
