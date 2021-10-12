@@ -8,10 +8,11 @@
 
     <meta name="viewport" content="width=device-width" />
 
-    <link rel="icon" href="img/favicon.png" />
-    <meta property="og:image" content="img/@1x/preview.jpg" />
+    <link rel="icon" href="images/favicon.png" />
+    <meta property="og:image" content="images/@1x/preview.jpg" />
 
     <link rel="stylesheet" href="css/styles.min.css" />
+    <link rel="stylesheet" href="css/app.min.css">
   </head>
 
   <body>
@@ -55,9 +56,15 @@
             <li class="nav__item"><a href="#" class="nav__link">Главная</a></li>
             <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
             <li class="nav__item"><a href="#" class="nav__link">Услуги</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Доставка</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">О компании</a></li>
-            <li class="nav__item"><a href="#" class="nav__link">Контакты</a></li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Доставка</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">О компании</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Контакты</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -67,12 +74,105 @@
       <div class="wrapper">
         <h1 class="title title--first-screen">быстрая Доставка</h1>
         <p class="first-screen__title-description">
-          бетона, щебня, песка и других нерудных материалов по Москве и Московской области
+          бетона, щебня, песка и других нерудных материалов по Москве и
+          Московской области
         </p>
         <div class="first-screen__link-inner">
           <a href="#" class="first-screen__link-btn">Подробнее о доставке</a>
           <a href="#" class="first-screen__link">или перейти в каталог</a>
         </div>
+      </div>
+    </section>
+
+    <section class="always-available">
+      <div class="wrapper">
+        <h2 class="title">Всегда в наличии</h2>
+        <ul class="always-available__list">
+          <li class="always-available__item">
+            <div class="always-available__img-box">
+              <img
+                class="always-available__img"
+                src="images/@1x/pesok.png"
+                srcset="images/@1x/pesok.png 1x, images/@2x/pesok.png 2x"
+                alt="песок"
+              />
+            </div>
+            <h3 class="title always-available__item-title">Песок речной</h3>
+            <p class="always-available__text">
+              Мелкий речной песок повышает прочность, долговечность и
+              морозоустойчивость растворов, в состав которых он входит.
+            </p>
+            <span class="always-available__price">от 330 р./т</span
+            ><button class="button-item">Подробнее</button>
+          </li>
+          <li class="always-available__item">
+            <div class="always-available__img-box">
+              <img
+                class="always-available__img"
+                src="images/@1x/sheben.png"
+                srcset="images/@1x/sheben.png 1x, img/@2x/sheben.png 2x"
+                alt="щебень"
+              />
+            </div>
+            <h3 class="title always-available__item-title">Щебень</h3>
+            <p class="always-available__text">
+              Мелкий речной песок повышает прочность, долговечность и
+              морозоустойчивость растворов, в состав которых он входит.
+            </p>
+            <span class="always-available__price">от 330 р./т</span
+            ><button class="button-item">Подробнее</button>
+          </li>
+          <li class="always-available__item">
+            <div class="always-available__img-box">
+              <img
+                class="always-available__img"
+                src="images/@1x/grunt.png"
+                srcset="images/@1x/grunt.png 1x, img/@2x/grunt.png 2x"
+                alt="грунт"
+              />
+            </div>
+            <h3 class="title always-available__item-title">Грунт</h3>
+            <p class="always-available__text">
+              Мелкий речной песок повышает прочность, долговечность и
+              морозоустойчивость растворов, в состав которых он входит.
+            </p>
+            <span class="always-available__price">от 330 р./т</span
+            ><button class="button-item">Подробнее</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="wrapper">
+        <h2 class="title">Наши преимущества</h2>
+        <ul class="benefits__list">
+          <li class="benefits__item">
+            <img class="benefits__img" src="images/@1x/piggy-bank.svg" alt="копилка" />
+            
+            <h3 class="benefits__title">Низкая цена</h3>
+            <p class="benefits__text">
+              Мы сотрудничаем напрямую с производителем, поэтому можем
+              гарантировать самую низкую цену.
+            </p>
+          </li>
+          <li class="benefits__item">
+            <img class="benefits__img" src="images/@1x/van.svg" alt="машина" />
+            <h3 class="benefits__title">Быстрая доставка</h3>
+            <p class="benefits__text">
+              Весь товар уже находится на нашем складе. Нам остается только
+              погрузить его и в путь!
+            </p>
+          </li>
+          <li class="benefits__item">
+            <img class="benefits__img" src="images/@1x/wheelbarrow.svg" alt="тачка" />
+            <h3 class="benefits__title">Индивидуальный подход</h3>
+            <p class="benefits__text">
+              Вам нужны бесперебойные поставки или большая партия товара со
+              скидкой? Мы найдем решение!
+            </p>
+          </li>
+        </ul>
       </div>
     </section>
 
