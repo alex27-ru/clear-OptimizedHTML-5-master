@@ -28,7 +28,8 @@ $text-lite: #626262
 
 $tran: all 0.3s ease
 
-
+*
+	box-sizing: border-box
 
 ::placeholder
 	color: #666
@@ -120,6 +121,9 @@ svg
 	padding: 8px 25px
 	font-weight: 500
 	margin-left: 30px
+	&:hover, &:active
+		color: lighten($text, 30%)
+		border-color: lighten($text, 30%)
 .call-header
 	display: flex
 	align-items: flex-start
@@ -265,6 +269,7 @@ svg
 	font-size: 12px
 	line-height: 1.83
 	transition: $tran
+	color: #0d0d0d
 	&:hover, &:active
 		outline: none
 		text-decoration: none
@@ -295,3 +300,45 @@ svg
 		font-weight: 500
 	&__text
 		margin-bottom: 0
+
+	
+.popular
+	&__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&__item
+		text-align: center
+		width: 220px
+		border: solid 2px #f6f6f6
+		padding: 18px
+	&__img-box
+		margin-bottom: 22px
+		height: 155px
+	&__img
+		max-width: 100%
+	&__item-title
+		font-size: 13px
+		font-weight: 400
+		text-decoration: underline
+		margin-bottom: 20px
+	&__price-box
+		display: flex
+		justify-content: space-evenly
+		align-items: center
+		margin-bottom: 20px
+	&__old-price
+		font-size: 10px
+		color: #979797
+		display: none
+	&__new-price
+		font-size: 16px
+		font-weight: 500
+		color: #000
+	&--action
+		.popular__old-price
+			display: block
+			text-decoration: line-through
+		.popular__new-price
+			color: #f00
+
