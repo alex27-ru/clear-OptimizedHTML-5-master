@@ -315,6 +315,7 @@ svg
 	&__img-box
 		margin-bottom: 22px
 		height: 155px
+		position: relative
 	&__img
 		max-width: 100%
 	&__item-title
@@ -341,4 +342,18 @@ svg
 			text-decoration: line-through
 		.popular__new-price
 			color: #f00
+		.popular__img-box
+			&:before
+				content: 'Акция'
+				position: absolute
+				width: 55px
+				height: 23px
+				padding: 4px
+				background-color: #f00
+				text-transform: uppercase
+				color: #fff
+				font-size: 10px
+				font-weight: 500
+				top: 10px
+				left: 10px
 
