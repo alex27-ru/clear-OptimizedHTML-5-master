@@ -124,10 +124,12 @@ svg
 	&:hover, &:active
 		color: lighten($text, 30%)
 		border-color: lighten($text, 30%)
-.call-header
+.call-header,
+.call-footer
 	display: flex
 	align-items: flex-start
-	.phone-heder
+	.phone-header,
+	.phone-footer
 		text-align: right
 		display: flex
 		flex-direction: column
@@ -421,3 +423,29 @@ svg
 	margin-bottom: 50px
 	text-align: left
 	min-width: 260px
+
+.footer
+	padding: 50px 0 40px
+	background-color: $text
+	.call-footer,
+	.logo
+		flex-direction: column
+		justify-content: space-between
+		display: flex
+	.logo__link,
+	.logo__img,
+	.logo__text p,
+	.copyright,
+	.phone-footer a,
+	.call-footer p,
+	.call-back
+		color: #fff
+		fill: #fff
+		border-color: #fff
+	.logo__nav
+		padding: 0
+
+.phone-footer
+	margin-bottom: 30px
+.call-footer
+	align-items: end
