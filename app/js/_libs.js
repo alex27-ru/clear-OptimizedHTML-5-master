@@ -6,6 +6,8 @@
 
 // delete window.IntersectionObserver; // Fallback Testing
 
+
+
 document.addEventListener('DOMContentLoaded', function() {
 
 	var lazyImages = [].slice.call(document.querySelectorAll('img.lazy'));
@@ -71,5 +73,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 	}
 
+
+	
+
 });
+
 
