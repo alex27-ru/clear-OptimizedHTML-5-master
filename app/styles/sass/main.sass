@@ -76,8 +76,9 @@ section
 svg
 	vertical-align: top
 .wrapper
-	max-width: 940px
+	max-width: 960px
 	margin: 0 auto
+	padding: 0 10px
 .header
 	margin-bottom: -30px
 	z-index: 2
@@ -152,8 +153,6 @@ svg
 	line-height: 22px
 	font-weight: 500
 	font-size: 14px
-
-.nav
 	&__list
 		display: flex
 		list-style: none
@@ -453,8 +452,58 @@ svg
 .slicknav_menu
 	display: none
 	background-color: #fc0
+
+
+@media (max-width: 960px)
+	.nav
+		margin: 0 -10px
+
+@media (max-width: 640px)
+	.call-header
+		flex-direction: column
+		align-items: end
+	.call-back
+		margin-left: 0
+	.logo__link,
+	.logo
+		display: flex
+		align-items: center
+	.logo__text
+		p
+			line-height: 15px
+	.phone-header
+		margin-bottom: 20px
+	.logo__nav
+		padding: 20px 0
+
 @media (max-width: 630px)
 	.nav__list
 		display: none
 	.slicknav_menu
 		display: block
+	.nav__item
+		width: 100%
+		height: 40px
+		text-align: center
+
+@media (max-width: 450px)
+	.logo
+		margin-bottom: 20px
+	.logo__nav
+		flex-direction: column
+		//align-items: center
+	.call-header
+		flex-direction: row
+		justify-content: space-between
+		align-items: flex-start
+		.phone-header
+			margin-bottom: 0
+			text-align: left
+			padding-right: 5px
+			a
+				text-align: left
+				margin-bottom: 0
+				font-size: 16px
+	.call-back
+		min-width: 146px
+		padding: 8px 15px

@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	// Custom J
 	$('.nav__list').slicknav({
 	label: '',
-	duration: 1000,
+	duration: 350,
 	prependTo: 'nav'
 });
 
