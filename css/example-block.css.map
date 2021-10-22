@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../app/styles/sass/blocks/example-block.sass"
+    ],
+    "names": [],
+    "file": "example-block.css"
+}
