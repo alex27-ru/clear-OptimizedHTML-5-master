@@ -221,7 +221,6 @@ svg
 		text-align: left
 
 .always-available
-	padding: 80px 0
 	&__list
 		display: flex
 		justify-content: space-between
@@ -471,6 +470,14 @@ svg
 	.first-screen__link
 		margin: 0 10px
 
+@media (max-width: 960px)
+	.always-available__list
+		justify-content: space-evenly
+	.always-available__item
+		margin-bottom: 35px
+	.always-available
+		padding-bottom: 45px
+
 @media (max-width: 640px)
 	.call-header
 		flex-direction: column
@@ -528,3 +535,6 @@ svg
 		margin-bottom: 20px
 	.first-screen
 		padding: 110px 0 90px
+
+	section
+		padding: 60px 0
