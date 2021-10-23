@@ -470,7 +470,7 @@ svg
 	.first-screen__link
 		margin: 0 10px
 
-@media (max-width: 960px)
+@media (max-width: 940px)
 	.always-available__list,
 	.benefits__list,
 	.popular__list,
@@ -486,6 +486,8 @@ svg
 	.popular,
 	.services
 		padding-bottom: 45px
+	.contacts
+		background-position-x: 40%
 
 @media (max-width: 640px)
 	.call-header
@@ -506,6 +508,9 @@ svg
 		padding: 20px 0
 	.first-screen
 		padding: 110px 0 90px
+	.footer
+		.logo
+			align-items: start
 
 @media (max-width: 630px)
 	.nav__list
@@ -523,11 +528,13 @@ svg
 	.logo__nav
 		flex-direction: column
 		//align-items: center
-	.call-header
+	.call-header,
+	.call-footer
 		flex-direction: row
 		justify-content: space-between
 		align-items: flex-start
-		.phone-header
+		.phone-header,
+		.phone-footer
 			margin-bottom: 0
 			text-align: left
 			padding-right: 5px
@@ -538,6 +545,14 @@ svg
 	.call-back
 		min-width: 146px
 		padding: 8px 15px
+	.contacts__box
+		width: 100%
+		max-width: none
+	.footer
+		.call-footer
+			flex-direction: row
+			justify-content: space-between
+			align-items: flex-start
 
 @media (max-width: 400px)
 	.first-screen__link-btn
