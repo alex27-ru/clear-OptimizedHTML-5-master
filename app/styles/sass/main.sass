@@ -1,0 +1,100 @@
+@use 'sass:math'
+@use 'sass:color'
+
+@import config
+@import 'blocks/**/*'
+
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: 'Roboto', sans-serif
+	overflow-x: hidden
+	color: $textcolor
+
+// Custom Sass / Remove before use
+@mixin button-reset
+	padding: 0
+	border: none
+	font: inherit
+	color: inherit
+	background-color: transparent
+	cursor: pointer
+.wrapper
+	max-width: 1200px
+	padding: 0 15px
+	margin:
+		left: auto
+		right: auto
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+header
+	width: 100%
+	height: 100px
+	background-color: #191919
+
+.header
+	display: flex
+
+	align-items: center
+	color: #fff
+	padding-top: 25px
+	&__phone
+		display: flex
+
+
+p
+	margin: 0
+
+
+button
+	@include button-reset
+.callback-button
+	width: 170px
+	height: 50px
+	background-image: linear-gradient(to top, #273588, #1c62ac)
+	text-transform: uppercase
+	&:focus
+		outline-color: #000
+
+.phone-items_gutter-right
+	margin-right: 28px
+
+.header__phone-link
+	font-weight: 900
+	color: #fff
+	text-decoration: none
+.logo
+	width: 191px
+	height: 40px
+.phone-items
+	display: flex
+	flex-direction: column
+
+
+
+.header__schedule
+	margin: 0 auto
+
+// Стилизация нумерованного списка https://iskraa.ru/blog/development/styling-ol
+
