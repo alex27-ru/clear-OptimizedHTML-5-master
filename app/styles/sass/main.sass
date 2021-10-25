@@ -19,14 +19,7 @@ input, textarea
 	&:required:valid
 		border-color: green
 
-body
-	font-size: 16px
-	min-width: 320px
-	position: relative
-	line-height: 1.65
-	font-family: 'Roboto', sans-serif
-	overflow-x: hidden
-	color: $textcolor
+
 
 // Custom Sass / Remove before use
 @mixin button-reset
@@ -66,24 +59,30 @@ header
 p
 	margin: 0
 
+ul,
+li
+	list-style: none
+	padding: 0
+	margin: 0
+
 
 button
 	@include button-reset
+
 .callback-button
 	width: 170px
 	height: 50px
 	background-image: linear-gradient(to top, #273588, #1c62ac)
 	text-transform: uppercase
+	font-size: 12px
+	font-weight: 700
 	&:focus
 		outline-color: #000
 
 .phone-items_gutter-right
 	margin-right: 28px
 
-.header__phone-link
-	font-weight: 900
-	color: #fff
-	text-decoration: none
+
 .logo
 	width: 191px
 	height: 40px
@@ -91,6 +90,8 @@ button
 	display: flex
 	flex-direction: column
 
+section
+	padding: 100px 0
 
 
 .header__schedule
@@ -98,3 +99,174 @@ button
 
 // Стилизация нумерованного списка https://iskraa.ru/blog/development/styling-ol
 
+.title
+	font-size: 36px
+	font-weight: 900
+
+.dark-section
+	color: #fff
+	.title
+		color: #fff
+
+
+
+
+
+
+.header
+	&__time 
+		font-size: 12px
+	&__holiday 
+		font-size: 12px
+	&__phone-link 
+		font-weight: 900
+		color: #fff
+		text-decoration: none
+		line-height: normal
+		&:first-child
+			margin-bottom: 7px
+	&__phone 
+
+.phone-items 
+
+.phone-items_gutter-right 
+
+
+.callback-button 
+
+.first-screen
+	background-image: url(../images/dist/first-bg.png)
+	background-position: top center
+	background-repeat: no-repeat
+	background-size: cover
+	padding: 0
+	&__box
+		background-color: $accent
+		width: 570px
+		padding: 95px 105px 120px
+	&__title
+		font-size: 40px
+		line-height: 1.38
+		text-transform: uppercase
+		margin-bottom: 40px
+	&__title-description 
+		font-size: 25px
+		font-weight: 800
+		margin-bottom: 95px
+		line-height: normal
+	&__list 
+
+	&__list-item 
+		display: flex
+	&__item-img 
+		margin-right: 26px
+		align-self: center
+	&__item-text 
+		font-size: 18px
+		line-height: normal
+
+.first-screen__list-item + .first-screen__list-item
+	margin-top: 40px
+
+.price 
+	&__box 
+	&__form-inner 
+	&__input-email 
+	&__input-phone 
+	&__form-text 
+	&--btn 
+
+.button 
+
+
+.quick 
+	&__title-description 
+	&__inner 
+	&__item 
+	&__item-img 
+	&__item-text 
+
+.vendor-code 
+	&__title 
+	&__title-description 
+	&__form-inner 
+	&__input-code 
+	&__input-phone 
+	&__form-description 
+	&__text 
+	&__phone-num 
+
+.vendor-code--btn 
+
+.warranty 
+	&__inner 
+	&__item 
+	&__item-img 
+	&__item-text 
+	&__item-btn 
+	&--title 
+		
+.bonuses 
+	&--title 
+	&__list 
+	&__item 
+	&__item-inner 
+	&__img 
+	&__text 
+
+.questions 
+	&--title 
+	&__title-description 
+	&__inner 
+	&__list-box 
+	&__list 
+	&__item 
+	&__answer 
+	&__more 
+	&__img 
+
+.comfortable 
+	&--title 
+	&__title-description 
+	&__list 
+	&__item 
+	&__img 
+	&__text 
+
+.storage 
+	&--title 
+	&__description 
+	&__inner 
+	&__img 
+
+.brigade 
+	&--title 
+	&__list 
+	&__item 
+	&__item-inner 
+	&__img 
+	&__text 
+
+.consultation 
+	&--title 
+	&__text 
+	&__phone 
+	&__form 
+	&__input-phone 
+	&--btn 
+
+.address 
+	&--title 
+	&__text 
+	&__phone 
+	&__map 
+
+.footer 
+	&__inner 
+	&__phone 
+	&__phone-text 
+	&__phone-link 
+
+.copyright 
+	&__love 
+	&__logo 
