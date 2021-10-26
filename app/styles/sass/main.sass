@@ -127,12 +127,7 @@ section
 			margin-bottom: 7px
 	&__phone 
 
-.phone-items 
 
-.phone-items_gutter-right 
-
-
-.callback-button 
 
 .first-screen
 	background-image: url(../images/dist/first-bg.png)
@@ -169,14 +164,62 @@ section
 	margin-top: 40px
 
 .price 
+	background-image: url(../images/dist/price-bg.png)
+	background-position: top center
+	background-repeat: no-repeat
+	background-size: cover
 	&__box 
+		padding: 0 18px
+		margin-left: auto
+		max-width: 806px
+		text-align: right
 	&__form-inner 
-	&__input-email 
-	&__input-phone 
-	&__form-text 
-	&--btn 
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+	&--title
+		font-size: 30px
+		margin-bottom: 60px
+	&__input-email,
+	&__input-phone,
+	&__form-text,
+	&--btn
+		width: 370px
+		height: 70px
+	&--btn
+		text-transform: uppercase
+		font-size: 17px
+		font-weight: 700
+		background-color: #1866af
+		color: #fff
+	&__form-text
+		padding-right: 60px
+		text-align: right
+		font-size: 14px
+		line-height: normal
+		display: flex
+		align-items: center
+		justify-content: flex-end
+		background-image: url(../images/dist/clock-icon.svg)
+		background-position: right center
+		background-repeat: no-repeat
+	&__input-email,
+	&__input-phone
+		background-color: #f2f2f2
+		border: none
+		padding: 26px 75px 26px 31px
+		margin-bottom: 30px
+	&__input-email
+		background-image: url(../images/dist/email-icon.svg)
+		background-position: right 30px center
+		background-repeat: no-repeat
+	&__input-phone
+		background-image: url(../images/dist/phone-icon.svg)
+		background-position: right 30px center
+		background-repeat: no-repeat
 
-.button 
+
+
 
 
 .quick 
