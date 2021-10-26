@@ -255,16 +255,59 @@ section
 		min-height: 44px
 
 .vendor-code 
+	background-image: url(../images/dist/vendor-cod-bg.jpg)
+	background-position: top center
+	background-repeat: no-repeat
+	background-size: cover
+	text-align: center
 	&__title 
+		font-size: 30px
+		margin-bottom: 25px
 	&__title-description 
-	&__form-inner 
-	&__input-code 
-	&__input-phone 
+		font-size: 20px
+		max-width: 680px
+		line-height: normal
+		margin: auto
+		margin-bottom: 55px
+		
+	&__form-inner
+		display: flex
+		justify-content: space-between
+		margin-bottom: 20px
+		flex-wrap: wrap
+	&__input-code,
+	&__input-phone
+		border: none
+		font-size: 13px
+		color: #818181 
+		width: 370px
+		height: 70px
+		text-transform: uppercase
+		padding: 0px 31px 0px 31px
+		margin-bottom: 20px
+	&__input-phone
+		padding: 0px 75px 0px 31px
+		background-image: url(../images/dist/phone-icon.svg)
+		background-position: right 30px center
+		background-repeat: no-repeat
 	&__form-description 
-	&__text 
-	&__phone-num 
+		margin: auto
+		margin-top: 35px
+		font-size: 14px
 
-.vendor-code--btn 
+	&__text 
+		font-size: 14px
+	&__phone-num 
+		color: #fff
+		text-decoration: none
+		font-size: 30px
+		font-weight: 800
+	&--btn
+		text-transform: uppercase
+		width: 370px
+		background-color: $accent
+		margin-bottom: 20px
+		height: 70px
 
 .warranty 
 	&__inner 
