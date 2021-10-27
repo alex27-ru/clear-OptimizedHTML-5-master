@@ -19,8 +19,12 @@
       </div>
       <div class="header__phone">
         <div class="phone-items phone-items_gutter-right">
-          <a href="tel:+78182474725" class="header__phone-link"> +7 (818) 247-47-25 </a>
-          <a href="tel:+78182474725" class="header__phone-link"> +7 (818) 247-47-25 </a>
+          <a href="tel:+78182474725" class="header__phone-link">
+            +7 (818) 247-47-25
+          </a>
+          <a href="tel:+78182474725" class="header__phone-link">
+            +7 (818) 247-47-25
+          </a>
         </div>
         <button class="callback-button">Заказать звонок</button>
       </div>
@@ -31,7 +35,10 @@
 <section class="first-screen">
   <div class="wrapper">
     <div class="first-screen__box">
-      <h1 class="title first-screen__title">Оригинальные запчасти<br> для Белаз</h1>
+      <h1 class="title first-screen__title">
+        Оригинальные запчасти<br />
+        для Белаз
+      </h1>
       <p class="first-screen__title-description">
         с бесплатной доставкой в Ваш город!
       </p>
@@ -43,7 +50,7 @@
             class="first-screen__item-img"
           />
           <p class="first-screen__item-text">
-            Дилерские цены - ниже на 20%, <br>работаем без посредников!
+            Дилерские цены - ниже на 20%, <br />работаем без посредников!
           </p>
         </li>
         <li class="first-screen__list-item">
@@ -53,7 +60,7 @@
             class="first-screen__item-img"
           />
           <p class="first-screen__item-text">
-            Срочная бесплатная доставка <br>за 7 дней
+            Срочная бесплатная доставка <br />за 7 дней
           </p>
         </li>
         <li class="first-screen__list-item">
@@ -62,7 +69,7 @@
             alt="календарь"
             class="first-screen__item-img"
           />
-          <p class="first-screen__item-text">Даем рассрочку <br>6 месяцев</p>
+          <p class="first-screen__item-text">Даем рассрочку <br />6 месяцев</p>
         </li>
         <li class="first-screen__list-item">
           <img
@@ -70,7 +77,9 @@
             alt="медаль"
             class="first-screen__item-img"
           />
-          <p class="first-screen__item-text">Даем гарантию <br>от 12 месяцев</p>
+          <p class="first-screen__item-text">
+            Даем гарантию <br />от 12 месяцев
+          </p>
         </li>
       </ul>
     </div>
@@ -80,7 +89,9 @@
 <section class="price">
   <div class="wrapper">
     <div class="price__box">
-      <h3 class="title price--title">Получите прайс прямо сейчас на электронную почту!</h3>
+      <h3 class="title price--title">
+        Получите прайс прямо сейчас на электронную почту!
+      </h3>
       <form class="price__form-inner">
         <input
           type="email"
@@ -96,7 +107,8 @@
 "
         />
         <p class="price__form-text">
-          Прайс придет к Вам на почту<br> в течение 5 минут!
+          Прайс придет к Вам на почту<br />
+          в течение 5 минут!
         </p>
         <button class="button price--btn">Получить прайс</button>
       </form>
@@ -186,37 +198,46 @@
     </h2>
     <ul class="warranty__inner">
       <li class="warranty__item">
-        <img
-          src="images/dist/contract.jpg"
-          alt="договор"
-          class="warranty__item-img"
-        />
+        <div class="warranty__item-box">
+          <img
+            src="images/dist/contract.jpg"
+            alt="договор"
+            class="warranty__item-img"
+          />
+        </div>
         <p class="warranty__item-text">
           Гарантия на целостность поставки прописана в договоре
         </p>
-        <button class="warranty__item-btn">ПОДРОБНЕЕ</button>
+        <button id="warranty1-click" class="warranty__item-btn">ПОДРОБНЕЕ</button>
+				<div id="warranty1" class="white-popup mfp-hide">Popup content</div>
       </li>
       <li class="warranty__item">
-        <img
-          src="images/dist/package.jpg"
-          alt="договор"
-          class="warranty__item-img"
-        />
+        <div class="warranty__item-box">
+          <img
+            src="images/dist/package.jpg"
+            alt="договор"
+            class="warranty__item-img"
+          />
+        </div>
         <p class="warranty__item-text">
           Каждая запчасть доставляется с завода в жесткой упаковке
         </p>
-        <button class="warranty__item-btn">ПОДРОБНЕЕ</button>
+        <button id="warranty2-click" class="warranty__item-btn">ПОДРОБНЕЕ</button>
+        <div id="warranty2" class="white-popup mfp-hide">Popup content</div>
       </li>
       <li class="warranty__item">
-        <img
-          src="images/dist/quality.jpg"
-          alt="договор"
-          class="warranty__item-img"
-        />
+        <div class="warranty__item-box">
+          <img
+            src="images/dist/quality.jpg"
+            alt="договор"
+            class="warranty__item-img"
+          />
+        </div>
         <p class="warranty__item-text">
           Дополнительный контроль качества нашими специалистами
         </p>
-        <button class="warranty__item-btn">ПОДРОБНЕЕ</button>
+        <button id="warranty3-click" class="warranty__item-btn">ПОДРОБНЕЕ</button>
+				<div id="warranty3" class="white-popup mfp-hide">Popup content</div>
       </li>
     </ul>
   </div>
