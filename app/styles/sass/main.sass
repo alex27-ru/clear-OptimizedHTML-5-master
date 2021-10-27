@@ -126,7 +126,7 @@ section
 		line-height: normal
 		&:first-child
 			margin-bottom: 7px
-	&__phone 
+
 
 
 
@@ -150,7 +150,7 @@ section
 		font-weight: 800
 		margin-bottom: 95px
 		line-height: normal
-	&__list 
+
 
 	&__list-item 
 		display: flex
@@ -352,9 +352,37 @@ section
 	max-width: 500px
 	margin: 20px auto
 
+// стили magnific-popup
+	/* overlay at start */
+.mfp-fade.mfp-bg 
+	opacity: 0
+	transition: all 0.15s ease-out
+
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready 
+	opacity: 0.8
+
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing
+	opacity: 0
+
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content 
+	opacity: 0
+	transition: all 0.15s ease-out
+
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content 
+	opacity: 1
+
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content 
+	opacity: 0
+
+
 
 		
-.bonuses 
+/*.bonuses 
 	&--title 
 	&__list 
 	&__item 
@@ -362,7 +390,7 @@ section
 	&__img 
 	&__text 
 
-.questions 
+/*.questions 
 	&--title 
 	&__title-description 
 	&__inner 
@@ -373,7 +401,7 @@ section
 	&__more 
 	&__img 
 
-.comfortable 
+/*.comfortable 
 	&--title 
 	&__title-description 
 	&__list 
@@ -381,13 +409,13 @@ section
 	&__img 
 	&__text 
 
-.storage 
+/*.storage 
 	&--title 
 	&__description 
 	&__inner 
 	&__img 
 
-.brigade 
+/*.brigade 
 	&--title 
 	&__list 
 	&__item 
@@ -395,7 +423,7 @@ section
 	&__img 
 	&__text 
 
-.consultation 
+/*.consultation 
 	&--title 
 	&__text 
 	&__phone 
@@ -403,18 +431,18 @@ section
 	&__input-phone 
 	&--btn 
 
-.address 
+/*.address 
 	&--title 
 	&__text 
 	&__phone 
 	&__map 
 
-.footer 
+/*.footer 
 	&__inner 
 	&__phone 
 	&__phone-text 
 	&__phone-link 
 
-.copyright 
+/*.copyright 
 	&__love 
 	&__logo 

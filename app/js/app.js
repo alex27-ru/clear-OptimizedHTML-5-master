@@ -8,21 +8,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	$('#warranty1-click').magnificPopup({
 		items: {
-      src: '#warranty1',
+      src: '#warranty3',
       type: 'inline'
-  }
+		},
+		removalDelay: 300,
+		mainClass: 'mfp-fade'
 	});
 	$('#warranty2-click').magnificPopup({
 		items: {
-      src: '#warranty2',
+      src: '#warranty3',
       type: 'inline'
-  }
+		},
+		removalDelay: 300,
+		mainClass: 'mfp-fade'
 	});
 	$('#warranty3-click').magnificPopup({
 		items: {
       src: '#warranty3',
       type: 'inline'
-  }
+		},
+		removalDelay: 300,
+		mainClass: 'mfp-fade'
+
 	});
 
 
