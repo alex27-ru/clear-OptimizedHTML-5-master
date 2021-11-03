@@ -4,7 +4,6 @@
 @import config
 @import 'blocks/**/*'
 
-
 ::placeholder
 	color: #666
 
@@ -19,8 +18,6 @@ input, textarea
 	&:required:valid
 		border-color: green
 
-
-
 // Custom Sass / Remove before use
 @mixin button-reset
 	padding: 0
@@ -32,9 +29,8 @@ input, textarea
 .wrapper
 	max-width: 1200px
 	padding: 0 15px
-	margin:
-		left: auto
-		right: auto
+	margin-left: auto
+	margin-right: auto
 
 .img-responsive
 	display: block
@@ -55,7 +51,6 @@ header
 	&__phone
 		display: flex
 
-
 p
 	margin: 0
 
@@ -65,7 +60,6 @@ li
 	list-style: none
 	padding: 0
 	margin: 0
-
 
 button
 	@include button-reset
@@ -83,7 +77,6 @@ button
 .phone-items_gutter-right
 	margin-right: 28px
 
-
 .logo
 	width: 191px
 	height: 40px
@@ -95,10 +88,8 @@ section
 	padding: 100px 0
 	text-align: center
 
-
 .header__schedule
 	margin: 0 auto
-
 
 .title
 	font-size: 36px
@@ -109,17 +100,13 @@ section
 	.title
 		color: #fff
 
-
-
-
-
-
-.header
-	&__time 
+.header,
+.footer
+	&__time
 		font-size: 12px
-	&__holiday 
+	&__holiday
 		font-size: 12px
-	&__phone-link 
+	&__phone-link
 		transition: all 0.15s ease-out
 		font-weight: 900
 		color: #fff
@@ -127,9 +114,6 @@ section
 		line-height: normal
 		&:first-child
 			margin-bottom: 7px
-
-
-
 
 .first-screen
 	background-image: url(../images/dist/first-bg.png)
@@ -146,36 +130,35 @@ section
 		line-height: 1.38
 		text-transform: uppercase
 		margin-bottom: 40px
-	&__title-description 
+	&__title-description
 		font-size: 25px
 		font-weight: 800
 		margin-bottom: 95px
 		line-height: normal
 
-
-	&__list-item 
+	&__list-item
 		display: flex
-	&__item-img 
+	&__item-img
 		margin-right: 26px
 		align-self: center
-	&__item-text 
+	&__item-text
 		font-size: 18px
 		line-height: normal
 
 .first-screen__list-item + .first-screen__list-item
 	margin-top: 40px
 
-.price 
+.price
 	background-image: url(../images/dist/price-bg.png)
 	background-position: top center
 	background-repeat: no-repeat
 	background-size: cover
-	&__box 
+	&__box
 		padding: 0 18px
 		margin-left: auto
 		max-width: 806px
 		text-align: right
-	&__form-inner 
+	&__form-inner
 		display: flex
 		flex-wrap: wrap
 		justify-content: space-between
@@ -223,25 +206,20 @@ section
 		background-position: right 30px center
 		background-repeat: no-repeat
 
-
-
-
-
-
-.quick 
+.quick
 	background-color: #08243e
 	text-align: center
 	&--title
 		margin-bottom: 30px
 
-	&__title-description 
+	&__title-description
 		max-width: 385px
 		margin: auto
 		margin-bottom: 100px
-	&__inner 
+	&__inner
 		display: flex
 		justify-content: space-evenly
-	&__item 
+	&__item
 		width: 230px
 		text-align: center
 		display: flex
@@ -249,29 +227,29 @@ section
 		align-items: center
 		justify-content: space-between
 		padding: 0 5px
-	&__item-img 
+	&__item-img
 		max-width: 100px
 		margin-bottom: 54px
-	&__item-text 
+	&__item-text
 		line-height: normal
 		min-height: 44px
 
-.vendor-code 
+.vendor-code
 	background-image: url(../images/dist/vendor-cod-bg.jpg)
 	background-position: top center
 	background-repeat: no-repeat
 	background-size: cover
 	text-align: center
-	&__title 
+	&__title
 		font-size: 30px
 		margin-bottom: 25px
-	&__title-description 
+	&__title-description
 		font-size: 20px
 		max-width: 680px
 		line-height: normal
 		margin: auto
 		margin-bottom: 55px
-		
+
 	&__form-inner
 		display: flex
 		justify-content: space-between
@@ -281,7 +259,7 @@ section
 	&__input-phone
 		border: none
 		font-size: 13px
-		color: #818181 
+		color: #818181
 		width: 370px
 		height: 70px
 		text-transform: uppercase
@@ -292,14 +270,14 @@ section
 		background-image: url(../images/dist/phone-icon.svg)
 		background-position: right 30px center
 		background-repeat: no-repeat
-	&__form-description 
+	&__form-description
 		margin: auto
 		margin-top: 35px
 		font-size: 14px
 
-	&__text 
+	&__text
 		font-size: 14px
-	&__phone-num 
+	&__phone-num
 		color: #fff
 		text-decoration: none
 		font-size: 30px
@@ -311,13 +289,13 @@ section
 		margin-bottom: 20px
 		height: 70px
 
-.warranty 
+.warranty
 	padding-bottom: 50px
-	&__inner 
+	&__inner
 		display: flex
 		justify-content: space-evenly
 		flex-wrap: wrap
-	&__item 
+	&__item
 		width: 370px
 		padding: 0 5px
 		margin-bottom: 50px
@@ -330,17 +308,17 @@ section
 		display: flex
 		justify-content: center
 		align-items: center
-	&__item-img 
+	&__item-img
 		max-width: 230px
-	&__item-text 
+	&__item-text
 		font-size: 18px
 		line-height: normal
 		margin-bottom: 30px
-	&__item-btn 
+	&__item-btn
 		text-transform: uppercase
 		font-weight: 700
 		text-decoration: underline
-	&--title 
+	&--title
 		margin: auto
 		margin-bottom: 100px
 		max-width: 720px
@@ -355,12 +333,12 @@ section
 
 // стили magnific-popup
 	/* overlay at start */
-.mfp-fade.mfp-bg 
+.mfp-fade.mfp-bg
 	opacity: 0
 	transition: all 0.15s ease-out
 
 /* overlay animate in */
-.mfp-fade.mfp-bg.mfp-ready 
+.mfp-fade.mfp-bg.mfp-ready
 	opacity: 0.8
 
 /* overlay animate out */
@@ -368,39 +346,37 @@ section
 	opacity: 0
 
 /* content at start */
-.mfp-fade.mfp-wrap .mfp-content 
+.mfp-fade.mfp-wrap .mfp-content
 	opacity: 0
 	transition: all 0.15s ease-out
 
 /* content animate it */
-.mfp-fade.mfp-wrap.mfp-ready .mfp-content 
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content
 	opacity: 1
 
 /* content animate out */
-.mfp-fade.mfp-wrap.mfp-removing .mfp-content 
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content
 	opacity: 0
 
 /* overlay off */
 .mfp-fade.mfp-bg.mfp-ready.overoff
 	opacity: 0
 
-
-		
-.bonuses 
+.bonuses
 	background-color: #08243e
-	&--title 
+	&--title
 		margin: auto
 		margin-bottom: 90px
 		max-width: 700px
-	&__list 
+	&__list
 		display: flex
 		justify-content: space-between
 		flex-wrap: wrap
 
-	&__item 
+	&__item
 		width: 262px
 		padding: 0 10px
-	&__item-inner 
+	&__item-inner
 		border: solid 2px #fff
 		width: 100px
 		height: 100px
@@ -414,29 +390,27 @@ section
 	&__text
 		line-height: normal
 
-
-
 .questions
 	background-color: #0b3554
-	&--title 
+	&--title
 		margin-bottom: 25px
-	&__title-description 
+	&__title-description
 		font-size: 20px
 		margin-bottom: 95px
-	&__inner 
+	&__inner
 		display: flex
 		flex-wrap: wrap
 		justify-content: space-between
 		align-items: start
-	&__list-box 
+	&__list-box
 		max-width: 570px
 		text-align: left
-	&__list 
+	&__list
 		text-align: left
 		counter-reset: myCounter
 		font-size: 16px
-					
-	&__item 
+
+	&__item
 		color: #fff
 		margin-bottom: 55px
 		position: relative
@@ -452,7 +426,7 @@ section
 			margin: 0 20px 0 0
 			display: inline-block
 	&__item-btn,
-	&__more 
+	&__more
 		color: #fff
 		transition: all 0.15s ease-out
 		text-decoration: underline
@@ -489,9 +463,9 @@ section
 			top: -20px
 			border: 10px solid transparent
 			border-bottom: 10px solid #fff
-	&__img 
+	&__img
 		max-width: 570px
-	&__more 
+	&__more
 		padding-left: 42px
 		font-size: 14px
 		background-image: url(../images/dist/reload.svg)
@@ -504,7 +478,6 @@ section
 	&--visible
 		&.questions__item
 			display: block
-
 
 .mfp-close
 	width: 44px
@@ -533,54 +506,52 @@ section
 	box-shadow: none
 	touch-action: manipulation
 
-
-.comfortable 
-	&--title 
+.comfortable
+	&--title
 		margin-bottom: 25px
 	&__title-description
 		font-size: 20px
 		margin-bottom: 90px
-	&__list 
+	&__list
 		display: flex
 		justify-content: space-evenly
 		flex-wrap: wrap
-	&__item 
+	&__item
 		width: 370px
 		padding: 20px 75px
-	&__img 
+	&__img
 		margin-bottom: 50px
 
-
-.storage 
+.storage
 	background-color: #0b3554
-	&--title 
+	&--title
 		margin-bottom: 25px
-	&__description 
+	&__description
 		margin: auto
 		font-size: 20px
 		margin-bottom: 90px
 		max-width: 650px
-	&__inner 
+	&__inner
 		display: flex
 		flex-wrap: wrap
 		justify-content: space-between
-	&__img 
+	&__img
 		max-width: 370px
 		padding: 10px 0
 
-.brigade 
-	&--title 
+.brigade
+	&--title
 		margin: auto
 		max-width: 860px
 		margin-bottom: 90px
-	&__list 
+	&__list
 		display: flex
 		flex-wrap: wrap
 		justify-content: space-evenly
-	&__item 
+	&__item
 		max-width: 370px
 		padding: 10px 30px
-	&__item-inner 
+	&__item-inner
 		border: solid 5px #ffbc3b
 		border-radius: 50%
 		width: 170px
@@ -591,64 +562,62 @@ section
 		justify-content: center
 		align-items: center
 
-
-.consultation 
+.consultation
 	background-color: #0d324d
 	background-image: url(../images/dist/consultation-bg.png)
 	background-position: bottom right -200px
 	background-repeat: no-repeat
 	background-size: 480px
 
-	&--title 
+	&--title
 		font-size: 30px
 		margin-bottom: 55px
-	&__text 
+	&__text
 		font-size: 14px
 		margin-bottom: 10px
-	&__phone 
+	&__phone
 		font-size: 30px
 		font-weight: 800
 		color: #fff
 		text-decoration: none
+		transition: all 0.15s ease-out
 
-	&__form 
+	&__form
 		display: flex
 		flex-wrap: wrap
 		justify-content: center
 		margin-top: 55px
-	&__input-phone 
+	&__input-phone
 		padding: 0px 75px 0px 31px
 		background-image: url(../images/dist/phone-icon.svg)
 		background-position: right 30px center
 		background-repeat: no-repeat
 		border: none
 		font-size: 13px
-		color: #818181 
+		color: #818181
 		width: 370px
 		height: 70px
 		text-transform: uppercase
 		padding: 0px 31px 0px 31px
 		margin-bottom: 20px
 	&--btn
-		width: 370px 
+		width: 370px
 		background-color: $accent
 		height: 70px
 		text-transform: uppercase
 	&__input-phone,
 	&--btn
 		margin: 0 15px
-	
 
-.address 
+.address
 	background-image: url(../images/dist/address-bg.png)
-
 	background-position: top center
 	background-repeat: no-repeat
 	background-size: cover
-	&--title 
+	&--title
 		font-size: 30px
 		margin-bottom: 100px
-	&__text 
+	&__text
 		font-size: 18px
 		margin-bottom: 35px
 	&__phone
@@ -656,14 +625,37 @@ section
 		font-weight: 800
 		font-size: 24px
 		color: #000
-	/*&__map 
+.map
+	height: 375px
 
-/*.footer 
-	&__inner 
-	&__phone 
-	&__phone-text 
-	&__phone-link 
+.footer
+	background-color: #191919
+	padding: 40px 0
+	&__inner
+		display: flex
+		justify-content: space-between
+	&__phone
+		text-align: center
+	&__phone-text
+		font-size: 13px
+		margin-bottom: 10px
+	&__phone-link
+		font-weight: 900
+		font-size: 18px
+		color: #fff
+		text-decoration: none
 
-/*.copyright 
-	&__love 
-	&__logo 
+.copyright
+	display: flex
+	align-items: center
+	font-size: 14px
+	&__love
+		width: 15px
+		height: 14px
+		background-image: url(../images/dist/love.svg)
+		background-position: center center
+		background-repeat: no-repeat
+		background-size: cover
+		margin: 0 9px
+	&__logo
+		margin: 0 10px
